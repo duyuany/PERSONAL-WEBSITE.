@@ -109,7 +109,7 @@ background: url("../img/banner2.jpg") no-repeat center;
 }
 #slide-nav{
     position: relative;
-    width: 478px;
+    width: 130px;
     height: 26px;
     margin: auto;
     margin-bottom: 40px;
@@ -117,12 +117,11 @@ background: url("../img/banner2.jpg") no-repeat center;
 .nav-line{
     float: left;
     position: relative;
-    width: 90px;
+    width: 10px;
     height: 1px;
     top: 13px;
     background: #ffffff;
     margin-left: 10px;
-    display: none;
 }
 .nav-btn{
     float: left;
@@ -413,6 +412,9 @@ background: url("../img/banner2.jpg") no-repeat center;
     .wen h3{
         display: none;
     }
+    #slide-nav{
+        width: 478px;
+    }
     /*.info-right>ul>li{*/
         /*margin:0 1%;*/
     /*}*/
@@ -437,10 +439,13 @@ background: url("../img/banner2.jpg") no-repeat center;
         display: block;
     }
     .nav-line{
-        display: block;
+        width: 90px;
     }
 }
 @media screen and (min-width: 1000px) {
+    #slide-nav{
+        width: 478px;
+    }
     .wen h3{
         display: block;
     }
@@ -472,7 +477,7 @@ background: url("../img/banner2.jpg") no-repeat center;
         display: block;
     }
     .nav-line{
-        display: block;
+        width: 90px;
     }
 }
 
