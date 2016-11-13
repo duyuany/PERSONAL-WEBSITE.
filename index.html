@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <title>个人网站</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/less.css">
     <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
     <script src="js/index.js"></script>
 </head>
-<body style="overflow:hidden;height: 100% ">
+<body style="overflow:hidden;height: 100%">
 <div class="header-pc">
-    <div class="logo">
-        <a href=""><img src="img/logo.png" alt=""></a>
-    </div>
-    <div class="nav-pc">
-        <ul class="nav-top">
-            <li class="item"><a href="">作品</a></li>
-            <li class="item"></li>
-            <li class="item">3</li>
-        </ul>
-    </div>
+    <!--<div class="logo">-->
+        <!--<a href=""><img src="img/logo.png" alt=""></a>-->
+    <!--</div>-->
+    <!--<div class="nav-pc">-->
+        <!--<ul class="nav-top">-->
+            <!--<li class="item"><a href="">作品</a></li>-->
+            <!--<li class="item"></li>-->
+            <!--<li class="item">3</li>-->
+        <!--</ul>-->
+    <!--</div>-->
 </div>
-<div class="page-wrap fullpage-wrapper" style="height: 100%;position: relative;background: indianred;top: -16px;">
-    <div class="section page1 fp-section active" style="height: 638px">
+<div class="page-wrap fullpage-wrapper" style="height: 100%">
+    <div class="section page1 fp-section active" style="height:100%;">
         <div class="slide-wrap">
             <ul>
                 <li>
                     <video src="img/bg1.mp4" loop autoplay></video>
                     <div class="bg"></div>
+                    <div class="page-text">
+                        <h1>你只管努力，上天自有安排</h1>
+                        <p>爱前端，爱编程，爱新技术</p>
+                    </div>
                 </li>
                 <li>
                     <video src="img/bg2.mp4" loop autoplay></video>
                     <div class="bg"></div>
+                    <div class="page-text">
+                        <h1>你只管努力，上天自有安排</h1>
+                        <p>爱前端，爱编程，爱新技术</p>
+                    </div>
                 </li>
                 <li>
                     <video src="img/bg3.mp4" loop autoplay style="top: -100px;"></video>
                     <div class="bg"></div>
+                    <div class="page-text">
+                        <h1>你只管努力，上天自有安排</h1>
+                        <p>爱前端，爱编程，爱新技术</p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -43,14 +57,20 @@
                 <ul>
                     <li class="nav-line"></li>
                     <li class="nav-btn">
+                        <div class="nav-btn-before">
+                        </div>
                         <span></span>
                     </li>
                     <li class="nav-line"></li>
                     <li class="nav-btn">
+                        <div class="nav-btn-before">
+                        </div>
                         <span></span>
                     </li>
                     <li class="nav-line"></li>
                     <li class="nav-btn">
+                        <div class="nav-btn-before">
+                        </div>
                         <span></span>
                     </li>
                     <li class="nav-line"></li>
@@ -58,6 +78,99 @@
             </div>
         </div>
     </div>
+    <div class="section page2 fp-section" style="height: 100%;">
+        <h1 style="text-align: center;line-height: 100px">关于我  <span style="font-size: 12px">ABOUT ME</span></h1>
+        <div class="per-info">
+            <div class="cover"></div>
+            <div class="photo" style="background: url('img/photo.jpg');background-size: cover"></div>
+            <div class="info-title">
+                <h3>前端工程师</h3>
+            </div>
+            <div class="info-left">
+                <p>
+                    姓名：杜媛
+                    <br>
+                    年龄：23
+                    <br>
+                    籍贯：山西省阳泉市
+                    <br>
+                    学历：本科
+                </p>
+            </div>
+            <div class="info-right container">
+                <ul class="row">
+                    <li class="col-s-hide col-m-3 col-l-3"><div>HTML</div></li>
+                    <li class="col-s-hide col-m-3 col-l-3"><div>CSS</div></li>
+                    <li class="col-s-hide col-m-3 col-l-3"><div>JS</div></li>
+                    <li class="col-s-hide col-m-3 col-l-3"><div>iQuery</div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section page3 fp-section" style="height: 100%;">
+        <div class="container product">
+            <div class="head">
+                <div class="img">
+                    <img src="img/img21.png">
+                </div>
+                <dl class="sort">
+                    <dt>view ALL</dt>
+                    <dd style="float:left">
+                        <a target="_blank" href="http://www.niups.com/anli/">查看全部案例</a>
+                    </dd>
+                </dl>
+            </div>
+            <ul class="row pro-wrap">
+                <li class="col-l-3 col-m-6 col-s-12">
+                    <a href=""><img src="img/pro1.jpg" alt=""></a>
+                    <div class="img-title">个人博客系统</div>
+                </li>
+                <li class="col-l-3 col-m-6 col-s-12">
+                    <a href=""><img src="img/pro2.jpg" alt=""></a>
+                    <div class="img-title">北京欢腾鞋业</div>
+                </li>
+                <li class="col-l-3 col-m-6 col-s-12">
+                    <a href=""><img src="img/pro1.jpg" alt=""></a>
+                    <div class="img-title">泊美</div>
+                </li>
+                <li class="col-l-3 col-m-6 col-s-12">
+                    <a href=""><img src="img/pro2.jpg" alt=""></a>
+                    <div class="img-title">新闻发布系统</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section page4 fp-section" style="height: 100%;">
+        <div class=" wrapper">
+            <div class="img">
+                <img src="img/img57.png" class="quan"/>
+                <div class="wen">
+                    <h1></h1>
+                    <h3 style="position: absolute;top:0px;left: -140px;">TEL:15735806404</h3>
+                    <h3 style="position: absolute;bottom:100px;left:-280px;">E-mail:1013672828@qq.com</h3>
+                    <h3 style="position: absolute;bottom:0px;right: -140px;">QQ:1013672828</h3>
+                </div>
+            </div>
+            <div class="container text">
+                <ul class="row" style="padding-left:20px; ">
+                    <li class="col-l-hide col-m-12 col-m-12"><h3>TEL:15735806404</h3></li>
+                    <li class="col-l-hide col-m-12 col-m-12"><h3>E-mail:1013672828@qq.com</h3></li>
+                    <li class="col-l-hide col-m-12 col-m-12"><h3>QQ:1013672828</h3></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn-wrap">
+    <ul>
+        <li class="btn-active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="sidebar">
+    
 </div>
 </body>
 </html>
