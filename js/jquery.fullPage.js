@@ -83,7 +83,7 @@
 			var element = $('.fp-section.active');
 
 			if(options.autoScrolling && !options.scrollBar){
-				$('html, body').css({
+				$('html5, body').css({
 					'overflow' : 'hidden',
 					'height' : '100%'
 				});
@@ -102,7 +102,7 @@
 				}
 
 			}else{
-				$('html, body').css({
+				$('html5, body').css({
 					'overflow' : 'visible',
 					'height' : 'initial'
 				});
@@ -118,7 +118,7 @@
 				silentScroll(0);
 
 				//scrolling the page to the section with no animation
-				$('html, body').scrollTop(element.position().top);
+				$('html5, body').scrollTop(element.position().top);
 			}
 
 		};
@@ -462,7 +462,7 @@
 						setBodyClass(destiny);
 
 						//scrolling the page to the section with no animation
-						$('html, body').scrollTop(section.position().top);
+						$('html5, body').scrollTop(section.position().top);
 					}
 
 					activateMenuAndNav(destiny, null);
@@ -931,7 +931,7 @@
 
 				$(scrollSettings.element).animate(
 					scrollSettings.options
-				, options.scrollingSpeed, options.easing).promise().done(function () { //only one single callback in case of animating  `html, body`
+				, options.scrollingSpeed, options.easing).promise().done(function () { //only one single callback in case of animating  `html5, body`
 					afterSectionLoads(v);
 				});
 			}
@@ -948,7 +948,7 @@
 				scroll.element = '.'+wrapperSelector;
 			}else{
 				scroll.options = { 'scrollTop': v.dtop};
-				scroll.element = 'html, body';
+				scroll.element = 'html5, body';
 			}
 
 			return scroll;
@@ -1799,7 +1799,7 @@
 
 
 		/*
-		* Destroys fullpage.js plugin events and optinally its html markup and styles
+		* Destroys fullpage.js plugin events and optinally its html5 markup and styles
 		*/
 		$.fn.fullpage.destroy = function(all){
 			$.fn.fullpage.setAutoScrolling(false, 'internal');
@@ -1872,7 +1872,7 @@
 			});
 
 			//scrolling the page to the top with no animation
-			$('html, body').scrollTop(0);
+			$('html5, body').scrollTop(0);
 		}
 
 		/*
