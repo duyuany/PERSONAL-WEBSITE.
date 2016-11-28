@@ -37,7 +37,11 @@ $(function(){
             flag=false;
             next++
             if(next>=$(".section").length){
-                return false;
+                next=0;
+            }
+            if(next==2){
+                $(".img").css("animation","pro 2s linear forwards")
+                $(".sort").css("animation","pro1 2s linear forwards")
             }
             $(".section").eq(now).css("top","0")
             $(".section").eq(next).css("top","100%")
@@ -52,7 +56,11 @@ $(function(){
             flag=false;
             next--;
             if($(".section").eq(0).css("top")=="0px"){
-                return false;
+                next=$(".section").length-1;
+            }
+            if(next==2){
+                $(".img").css("animation","pro 2s linear forwards")
+                $(".sort").css("animation","pro1 2s linear forwards")
             }
             $(".section").eq(now).css("top","0")
             $(".section").eq(next).css("top","-100%")
@@ -87,10 +95,6 @@ $(function(){
     },function(){
         move("up");
     })
-    //$('#dowebok').fullpage({
-    //    anchors: ['page1', 'page2', 'page3', 'page4'],
-    //    menu: '#menu'
-    //});
 })
 
 

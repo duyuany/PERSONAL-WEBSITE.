@@ -217,7 +217,7 @@ background: url("../img/banner2.jpg") no-repeat center;
     cursor: pointer;
     width:8px;
     height:8px;
-    margin-top: 15px;
+    margin-top: 25px;
     border-radius: 50%;
     background: #ffffff;
     transition:transform 0.1s linear ;
@@ -357,8 +357,8 @@ background: url("../img/banner2.jpg") no-repeat center;
     transform: rotateY(360deg);
 }
 .wen>h1{
-    background: url("../img/weixin.jpg") no-repeat center 55%;
-    background-size: 200%;
+    background: url("../img/weixin.jpg") no-repeat center 57%;
+    background-size: 130%;
 }
 .per-info{
     width:60%;
@@ -369,11 +369,27 @@ background: url("../img/banner2.jpg") no-repeat center;
     perspective: 800px;
 }
 .img{
-    width:280px;
+    /*width:280px;*/
     float: left;
+}
+@keyframes pro{
+    0%{
+        transform:translateX(-100px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
 }
 .sort{
     float: right;
+}
+@keyframes pro1{
+    0%{
+        transform:translateX(100px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
 }
 .wen h3{
     display: none;
@@ -406,6 +422,30 @@ background: url("../img/banner2.jpg") no-repeat center;
 }
 .page-text>h1{
     font-size: 20px;
+    -webkit-animation: font 2s linear forwards;
+    -o-animation: font 2s linear forwards;
+    animation: font 2s linear forwards;
+}
+.page-text>p{
+    -webkit-animation: panimate 2s linear forwards;
+    -o-animation: panimate 2s linear forwards;
+    animation: panimate 2s linear forwards;
+}
+@keyframes font{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes panimate{
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .img-title{
     height:40px;text-align: center;background-color: #fff;
