@@ -105,14 +105,28 @@ $(function(){
             }
             if(index==next){
                 $(".empty").eq(index).css({transform: "rotateZ(360deg)"})
+                $(".bb").eq(index).find(".bb").css({transform: "rotateY(360deg)"})
             }else{
                 $(".empty").eq(index).css({transform: "rotateZ(0deg)"})
+                $(".bb").eq(index).find(".bb").css({transform: "rotateY(0deg)"})
             }
         })
 
     })
     $(".page-wrap")[0].addEventListener("mozTransitionEnd",function(){
         flag=true;
+        $(".section").each(function(index,obj){
+            if(index==0){
+                return;
+            }
+            if(index==next){
+                $(".empty").eq(index).css({transform: "rotateZ(360deg)"})
+                $(".bb").eq(index).find(".bb").css({transform: "rotateY(360deg)"})
+            }else{
+                $(".empty").eq(index).css({transform: "rotateZ(0deg)"})
+                $(".bb").eq(index).find(".bb").css({transform: "rotateY(0deg)"})
+            }
+        })
     })
 })
 

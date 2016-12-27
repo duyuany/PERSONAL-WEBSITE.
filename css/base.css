@@ -47,7 +47,7 @@ a{
     color: #ffffff;
 }
 .page1{
-    background: url(../img/bg1.jpg) no-repeat center;
+    background: url("../img/16sucai_2016071803_01001%20(2).jpg") no-repeat center;
     background-size: cover !important;
 }
 .slide-wrap{
@@ -186,7 +186,7 @@ background: url("../img/banner2.jpg") no-repeat center;
     margin:0 auto;
 }
 .page2{
-    background: url("../img/bg2.jpg") no-repeat center;
+    background: url("../img/16sucai_2016071803_01001%20(2).jpg") no-repeat center;
     background-size: cover;
 }
 .page2>h1{
@@ -232,19 +232,16 @@ background: url("../img/banner2.jpg") no-repeat center;
 .btn-wrap>ul>li:hover{
     transform: scale(2,2);
 }
-/*.left{*/
-    /*position: relative;*/
-/*}*/
 .page2 .photo-wrap{
     position: relative;
     height: 50%;
 }
 .page3{
-    background: url("../img/bg3.jpg") no-repeat center;
+    background: url("../img/16sucai_2016071803_01001%20(10).jpg") no-repeat center;
     background-size: cover;
 }
 .page4{
-    background: url("../img/bg4.jpg") no-repeat center;
+    background: url("../img/16sucai_2016071803_01001%20(11).jpg") no-repeat center;
     background-size: cover;
 }
 .page4 .wrapper {
@@ -288,6 +285,7 @@ background: url("../img/banner2.jpg") no-repeat center;
     left: 15px;
     top:-15px;
     background: url('../img/photo.jpg');background-size: cover;
+    -moz-transition: background 1s linear;
     transition: background 1s linear;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -295,7 +293,7 @@ background: url("../img/banner2.jpg") no-repeat center;
     transform-style: preserve-3d;
 }
 .photo:hover{
-    background: url('../img/weixin.jpg');background-size: cover;
+    background: url('../img/7-15020Q15059.jpg');background-size: cover;
 }
 .photo:after{
     clear:both;
@@ -354,15 +352,16 @@ background: url("../img/banner2.jpg") no-repeat center;
     font-weight: bold;
     box-shadow: 0 5px 5px rgba(0,0,0,0.9);
     /*opacity: 1;*/
+    -webkit-transition:transform 1s linear ;
+    -moz-transition:transform 1s linear ;
     transition:transform 1s linear ;
-}
-.info-right>ul>li>div:hover{
-    /*opacity: 0.7;*/
-    transform: rotateY(360deg);
 }
 .wen>h1{
     background: url("../img/weixin.jpg") no-repeat center 57%;
     background-size: 130%;
+    -webkit-transition:transform 1s linear ;
+    -moz-transition:transform 1s linear ;
+    transition:transform 1s linear ;
 }
 .per-info{
     width:60%;
@@ -373,7 +372,6 @@ background: url("../img/banner2.jpg") no-repeat center;
     perspective: 800px;
 }
 .img{
-    /*width:280px;*/
     float: left;
 }
 @keyframes pro{
@@ -397,6 +395,9 @@ background: url("../img/banner2.jpg") no-repeat center;
 }
 .wen h3{
     display: none;
+    -webkit-transition:transform 1s linear ;
+    -moz-transition:transform 1s linear ;
+    transition:transform 1s linear ;
 }
 .product{
     /*height: 350px;*/
@@ -462,6 +463,9 @@ background: url("../img/banner2.jpg") no-repeat center;
 @media screen and (min-width: 768px) {
     .wen h3{
         display: none;
+        -webkit-transition:transform 1s linear ;
+        -moz-transition:transform 1s linear ;
+        transition:transform 1s linear ;
     }
     #slide-nav{
         width: 478px;
@@ -522,7 +526,7 @@ background: url("../img/banner2.jpg") no-repeat center;
 
 
 
-@media screen and (max-height: 638px){
+@media screen and (max-height: 700px){
     .slide-wrap ul li video{
         display:block;
     }
